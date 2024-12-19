@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Basic Math</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile-icon">
+      <a href="profile.html">
+        <img src="https://img.icons8.com/ios-glyphs/90/000000/user--v1.png" alt="Profile">
+      </a>
+    </div>
+    <h1>Learn Basic Math</h1>
+  </header>
+
+  <section class="welcome">
+    <h2>Challenge Your Math Skills!</h2>
+    <p>
+      Think you're a math whiz? Take this quiz to test your knowledge in Arithmetic, Geometry, Algebra, and Statistics.<br>
+      Score high and prove your skills!
+    </p>
+  </section>
+  
+  <div class="main-container">
+    <nav class="menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arithmetic.html">Arithmetic</a></li>
+        <li><a href="geometry.html">Geometry</a></li>
+        <li><a href="algebra.html">Algebra</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <section class="quiz-section">
+      <h2>Math Quiz</h2>
+      <p>Test your skills in Arithmetic, Geometry, Algebra, and Statistics. Good luck!</p>
+      <form action="submit.html?type=quiz" method="POST" class="quiz-form">
+        <fieldset>
+          <legend>Arithmetic</legend>
+          <label for="q1">1. What is 8 × 6?</label>
+          <input type="number" id="q1" name="q1" placeholder="Your answer" required>
+          <label for="q2">2. Solve: 45 ÷ 5 + 3</label>
+          <input type="number" id="q2" name="q2" placeholder="Your answer" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Geometry</legend>
+          <label for="q3">3. What is the area of a rectangle with length 10 units and width 5 units?</label>
+          <input type="number" id="q3" name="q3" placeholder="Your answer" required>
+          <label for="q4">4. What is the sum of the interior angles of a triangle?</label>
+          <input type="number" id="q4" name="q4" placeholder="Your answer" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Algebra</legend>
+          <label for="q5">5. Solve for x: 2x + 3 = 11</label>
+          <input type="number" id="q5" name="q5" placeholder="Your answer" required>
+          <label for="q6">6. If y = 3x + 2, find y when x = 4.</label>
+          <input type="number" id="q6" name="q6" placeholder="Your answer" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Statistics</legend>
+          <label for="q7">7. What is the mean of the numbers 4, 8, 12?</label>
+          <input type="number" id="q7" name="q7" placeholder="Your answer" required>
+          <label for="q8">8. In a dataset {2, 3, 3, 5, 7}, what is the mode?</label>
+          <input type="number" id="q8" name="q8" placeholder="Your answer" required>
+        </fieldset>
+
+        <button type="submit">Submit Quiz</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>This is a demonstration website developed as an educational exercise and incorporates text and media from Wikipedia under the Creative Commons license.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile-icon">
+      <a href="index.html">
+        <img src="https://img.icons8.com/ios-glyphs/90/000000/home.png" alt="Home">
+      </a>
+    </div>
+    <h1>User Profile</h1>
+  </header>
+
+  <section class="welcome">
+    <h2>Welcome to Your Profile</h2>
+    <p>Provide your information to personalize your learning experience.</p>
+  </section>
+
+  <div class="main-container">
+    <form action="submit_profile.html" method="POST" class="profile-form">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="5" max="100" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Learning Preferences</legend>
+        <p>Which topics are you most interested in?</p>
+        <label><input type="checkbox" name="topics" value="arithmetic"> Arithmetic</label>
+        <label><input type="checkbox" name="topics" value="geometry"> Geometry</label>
+        <label><input type="checkbox" name="topics" value="algebra"> Algebra</label>
+        <label><input type="checkbox" name="topics" value="statistics"> Statistics</label>
+        <br>
+        <label for="goals">What are your learning goals?</label>
+        <textarea id="goals" name="goals" placeholder="Describe your learning goals" rows="4"></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>This is a demonstration website developed as an educational exercise and incorporates text and media from Wikipedia under the Creative Commons license.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
